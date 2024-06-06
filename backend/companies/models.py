@@ -1,7 +1,6 @@
 from django.db import models
-from django.contrib.auth.models import User
 
-class   Company(models.Model):
+class Company(models.Model):
     company_name = models.CharField(max_length=100)
     address = models.CharField(max_length=255)
     contact_number = models.CharField(max_length=20)
@@ -14,11 +13,6 @@ class   Company(models.Model):
         return self.company_name
 
 
-
-
-
-
-from django.db import models
 
 class JobListing(models.Model):
     company = models.ForeignKey(Company, on_delete=models.CASCADE)
