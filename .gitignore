@@ -1,2 +1,12 @@
 env
-/env
+/backend/.env
+/backend/.env
+backend /.env
+__pycache__/
+
+aws/
+/aws
+myenv
+awscliv2.zip
+.app_nginx.swp
+venv
